@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVBBLF8');</script>
+<!-- End Google Tag Manager -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function() {
+        $('input[name="phone"]').mask('+38 XXX XXX XX XX');
+    });
+    </script>
+	<script>
+	$( document ).ready(function(){
+	  $('.check_wrap').click(function(){
+		if ($('#panorama_day').css('display')=='true'){
+			$('#panorama_day').hide(); 
+			$('#panorama_night').show();
+		}
+		else{
+			$('#panorama_day').show();
+			$('#panorama_night').hide();
+		}
+	  });
+	});
+		</script>
+<!--     <script>
+    $(document).ready(function() {
+        $(".send_form").submit(function(e) {
+            window.open("/thank-you.html");
+
+        });
+    });
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {$("form").submit(function() {$.ajax({type: "POST", url: "php/mail.php", data: $(this).serialize() }).done(function() {window.location = "php/thank.php"; $("form").trigger("reset"); }); return false; });
+    });
+    </script>
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nordy.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+	
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-8 col-8 mt-4">
+                                <div class="modal-head">Оставьте свое Имя и контактный телефон. В ближайшее время с Вами свяжется специалист.</div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-4 mt-3">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="img/Union.png"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <form class="send_form" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" class="form-control align-self-end mt-5" id="name-input" aria-describedby="emailHelp" placeholder="Р вЂ™Р В°РЎв‚¬Р Вµ Р С‘Р СРЎРЏ" maxlength="18" required>
+                                    <input type="tel" name="phone" class="form-control align-self-end mt-5" id="phone-input2" aria-describedby="emailHelp" placeholder="Р вЂ™Р В°РЎв‚¬ Р Р…Р С•Р СР ВµРЎР‚" maxlength="18" required>
+                                    <!--<input type="tel" name="mail" class="form-control align-self-end mt-5" id="mail-input" aria-describedby="emailHelp" placeholder="Р вЂ™Р В°РЎв‚¬Р В° Р С—Р С•РЎвЂЎРЎвЂљР В°" maxlength="18" required>-->
+                                    <input type="text" name="type_room" class="form-control align-self-end mt-5" id="type-input" aria-describedby="emailHelp" placeholder="Р С™Р В°Р С”Р С•Р в„– РЎвЂљР С‘Р С— Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘РЎРЏ РЎвЂ¦Р С•РЎвЂљР С‘РЎвЂљР Вµ РЎРѓР С—РЎР‚Р С•Р ВµР С”РЎвЂљР С‘РЎР‚Р С•Р Р†Р В°РЎвЂљРЎРЉ?" maxlength="18" required>
+                                    <input type="tel" name="area_room" class="form-control align-self-end mt-5" id="square-input" aria-describedby="emailHelp" placeholder="Р С™Р В°Р С”Р С•Р Р†Р В° Р С—РЎР‚Р С‘Р СР ВµРЎР‚Р Р…Р В°РЎРЏ Р С—Р В»Р С•РЎвЂ°Р В°Р Т‘РЎРЉ Р Р†Р В°РЎв‚¬Р ВµР С–Р С• Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘РЎРЏ?" maxlength="18" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button  class="btn btnwhite mod align-self-start">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                <h1>Политика в отношении обработки персональных данных</h1>
+                    <h3>1. Общие положения</h3>
+                    <p>Настоящие Положение о политике конфиденциальности и является официальным документом студии PRIDE  (далее — «Компания»), и определяет порядок обработки и защиты информации о физических лицах (далее — Пользователи), пользующихся сервисами, информацией, услугами, программами (в т.ч. программами лояльности) расположенными на доменном имени //pridestudio.com.ua/.
+                        <br>1. Компания ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+                        <br>2. Настоящая политика Компанияа в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Компания может получить о посетителях веб-сайта http://www.pridestudio.com.ua/.</p>
+                    <h3>2. Основные понятия, используемые в Политике</h3>
+                    <p>1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;
+                        <br>2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);
+                        <br>3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу http://www.pridestudio.com.ua/;
+                        <br>4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;
+                        <br>5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;
+                        <br>6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;
+                        <br>7. Компания – муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а
+                        также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;
+                        <br>8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта http://www.pridestudio.com.ua/;
+                        <br>9. Пользователь – любой посетитель веб-сайта http://www.pridestudio.com.ua/;
+                        <br>10. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;
+                        <br>11. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;
+                        <br>12. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;
+                        <br>13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</p>
+                    <h3>3. Компания может обрабатывать следующие персональные данные Пользователя</h3>
+                    <p>1. Фамилия, имя, отчество;
+                        <br>2. Электронный адрес;
+                        <br>3. Номера телефонов;
+                        <br>4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+                        <br>5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+                    <h3>4. Цели обработки персональных данных</h3>
+                    <p>1. Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; заключение, исполнение и прекращение гражданско-правовых договоров.
+                        <br>2. Также Компания имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Компанияу письмо на адрес электронной почты pride.interiorstudio@gmail.com с пометкой «Отказ от уведомлениях о новых продуктах и услугах и специальных предложениях».
+                        <br>3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+                    <h3>5. Правовые основания обработки персональных данных</h3>
+                    <p>1. Компания обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте http://www.pridestudio.com.ua/. Заполняя соответствующие формы и/или отправляя свои персональные данные Компанияу, Пользователь выражает свое согласие с данной Политикой.
+                        <br>2. Компания обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+                    <h3>6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h3>
+                    <p>Безопасность персональных данных, которые обрабатываются Компанияом, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.
+                        <br>1. Компания обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.
+                        <br>2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.
+                        <br>3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Компанияу уведомление на адрес электронной почты Компанияа pride.interiorstudio@gmail.com с пометкой «Актуализация персональных данных».
+                        <br>4. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Компанияу уведомление посредством электронной почты на электронный адрес Компанияа pride.interiorstudio@gmail.com с пометкой «Отзыв согласия на обработку персональных данных».</p>
+                    <h3>7. Трансграничная передача персональных данных</h3>
+                    <p>1. Компания до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.
+                        <br>2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p>
+                    <h3>8. Заключительные положения</h3>
+                    <p>1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Компанияу с помощью электронной почты pride.interiorstudio@gmail.com.
+                        <br>2. В данном документе будут отражены любые изменения политики обработки персональных данных Компанияом. Политика действует бессрочно до замены ее новой версией.
+                        <br>3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу http://www.pridestudio.com.ua/.</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <title>Студия Дизайна Екатерины Кирильевой - Дизайн интерьера квартир и частных домов, ремонт под ключ, 3D визуализация интерьера.</title>
+</head>
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVBBLF8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header class="header wow fadeInDown">
+        <nav class="navbar navbar-expand-md"> <!--pt-3 pb-3-->
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" style="height:85px; width:auto;"></a>
+                <button class="navbar-toggler ml-auto navbar-light mob-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon my-toggler"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-md-auto mt-2">
+                        <!-- <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="mailto:pride.interiorstudio@gmail.com">pride.interiorstudio@gmail.com</a>
+                            <a href="#exampleModalLong" class="btn-order-callback" data-toggle="modal" data-target="#exampleModalLong">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ Р В·Р Р†Р С•Р Р…Р С•Р С”</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <!--<a class="nav-link" href="mailto:pride.interiorstudio@gmail.com">ekaterinakirilyeva@gmail.com</a>-->
+                            <a href="#exampleModalLong" class="btn-order-callback" data-toggle="modal" data-target="#exampleModalLong"  style="line-height: 40px;">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ Р В·Р Р†Р С•Р Р…Р С•Р С”</a>
+                            <a class="nav-link tel" href="tel:++380964011697">+38 096 401 1697</a>
+                            <!-- <div class="row">
+                                <a href="tg://resolve?domain=380964011697" style="margin-left:24px;"><img src="img/teleg.png"></a>
+                                <a href="viber://add?number=380964011697" style="margin-left:14px; margin-top:2.5px;"><img src="img/viber.png"></a>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="uniquedisign">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-12 text-center whiteblock wow fadeInLeft">
+                    <h1 class="mt-5">ДИЗАЙН ИНТЕРЬЕРА<br>ПРЕМИУМ-КЛАССА<br>от 30 дней в Харькове и области<br></h1>
+                    <p class="mt-3 header-text">Бесплатный выезд дизайнера на обмер<br></p>
+                    <button class="btn btnwhite mb-5" data-toggle="modal" data-target="#exampleModalLong">Р В Р В°РЎРѓРЎРѓРЎвЂЎР С‘РЎвЂљР В°РЎвЂљРЎРЉ РЎРѓРЎвЂљР С•Р С‘Р СР С•РЎРѓРЎвЂљРЎРЉ Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР В° Р С‘Р Р…Р Т‘Р С‘Р Р†Р С‘Р Т‘РЎС“Р В°Р В»РЎРЉР Р…Р С•</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whywe wow fadeInUp">
+        <div class="container">
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-12">
+                    <div class="d-flex flex-wrap whywebox">
+                        <div class="whywe-box">
+                            <span>Р СџР вЂєР С’Р СњР ВР В Р С›Р вЂ™Р С™Р С’&nbsp; &nbsp; &nbsp;<br></span>
+                            <h3 class="mt-3">Р В Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р ВµР С Р С–РЎР‚Р В°Р СР С•РЎвЂљР Р…Р С•Р Вµ Р С‘ Р С—Р С•Р Р…РЎРЏРЎвЂљР Р…Р С•Р Вµ Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…Р С•Р Вµ РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘Р Вµ РЎРѓ РЎС“РЎвЂЎР ВµРЎвЂљР С•Р С Р вЂ™Р В°РЎв‚¬Р С‘РЎвЂ¦ Р С—Р С•Р В¶Р ВµР В»Р В°Р Р…Р С‘Р в„–. Р СџРЎР‚Р С‘ Р Р…Р ВµР С•Р В±РЎвЂ¦Р С•Р Т‘Р С‘Р СР С•РЎРѓРЎвЂљР С‘ Р Т‘Р В°Р Т‘Р С‘Р С РЎР‚Р ВµР С”Р С•Р СР ВµР Р…Р Т‘Р В°РЎвЂ Р С‘Р С‘.</h3>
+                        </div>
+                        <div class="whywe-box mt-3 mt-md-0">
+                            <span>3D Р вЂ™Р ВР вЂ”Р Р€Р С’Р вЂєР ВР вЂ”Р С’Р В¦Р ВР Р‡&nbsp; &nbsp;</span>
+                            <h3 class="mt-3">Р РЋР С•Р В·Р Т‘Р В°Р Т‘Р С‘Р С РЎР‚Р ВµР В°Р В»Р С‘РЎРѓРЎвЂљР С‘РЎвЂЎР Р…РЎС“РЎР‹ 3D Р СР С•Р Т‘Р ВµР В»РЎРЉ Р вЂ™Р В°РЎв‚¬Р ВµР С–Р С• Р В±РЎС“Р Т‘РЎС“РЎвЂ°Р ВµР С–Р С• Р В¶Р С‘Р В»Р С‘РЎвЂ°Р В°. Р вЂ™РЎвЂ№ РЎРѓР СР С•Р В¶Р ВµРЎвЂљР Вµ Р С•РЎвЂ°РЎС“РЎвЂљР С‘РЎвЂљРЎРЉ Р С—РЎР‚Р С•РЎРѓРЎвЂљРЎР‚Р В°Р Р…РЎРѓРЎвЂљР Р†Р С•, РЎС“Р Р†Р С‘Р Т‘Р ВµРЎвЂљРЎРЉ Р СР ВµР В±Р ВµР В»РЎРЉ, РЎРѓР Р†Р ВµРЎвЂљ, Р СР В°РЎвЂљР ВµРЎР‚Р С‘Р В°Р В»РЎвЂ№ Р С‘ Р Т‘РЎР‚РЎС“Р С–Р С‘Р Вµ РЎвЂљР С•Р Р…Р С”Р С•РЎРѓРЎвЂљР С‘ Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р В° Р вЂ™Р В°РЎв‚¬Р ВµР С–Р С• Р С‘Р Р…РЎвЂљР ВµРЎР‚РЎРЉР ВµРЎР‚Р В°.</h3>
+                        </div>
+                        <div class="whywe-box mt-3 mt-md-0">
+                            <span>Р В Р вЂўР СљР С›Р СњР Сћ&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>
+                            <h3 class="mt-3">Р СџРЎР‚Р С•РЎвЂћР ВµРЎРѓРЎРѓР С‘Р С•Р Р…Р В°Р В»РЎРЉР Р…Р С• Р С‘ Р С”Р В°РЎвЂЎР ВµРЎРѓРЎвЂљР Р†Р ВµР Р…Р Р…Р С• Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р С‘Р С Р Р†РЎРѓР Вµ РЎР‚Р ВµР СР С•Р Р…РЎвЂљР Р…Р С•-Р С•РЎвЂљР Т‘Р ВµР В»Р С•РЎвЂЎР Р…РЎвЂ№Р Вµ, РЎРЊР В»Р ВµР С”РЎвЂљРЎР‚Р С•Р СР С•Р Р…РЎвЂљР В°Р В¶Р Р…РЎвЂ№Р Вµ Р С‘ РЎРѓР В°Р Р…РЎвЂљР ВµРЎвЂ¦Р Р…Р С‘РЎвЂЎР ВµРЎРѓР С”Р С‘Р Вµ РЎР‚Р В°Р В±Р С•РЎвЂљРЎвЂ№ РЎРѓ Р В°Р Р†РЎвЂљР С•РЎР‚РЎРѓР С”Р С‘Р С РЎРѓР С•Р С—РЎР‚Р С•Р Р†Р С•Р В¶Р Т‘Р ВµР Р…Р С‘Р ВµР С&nbsp; Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р ВµРЎР‚Р В° Р Р† РЎвЂ¦Р С•Р Т‘Р Вµ Р Р†РЎРѓР ВµР С–Р С• Р С—РЎР‚Р С•РЎвЂ Р ВµРЎРѓРЎРѓР В° РЎР‚Р ВµР СР С•Р Р…РЎвЂљР В°.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<div class="row">
+        <div class="col-md-12 wow fadeInUp">
+            <h2 style="margin: 85px 0 40px 0;" class="text-center text-uppercase"><b>Р СџРЎР‚Р С‘Р СР ВµРЎР‚ 3D-Р Р†Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘Р С‘, Р С”Р С•РЎвЂљР С•РЎР‚РЎС“РЎР‹ Р Р†РЎвЂ№ Р С—Р С•Р В»РЎС“РЎвЂЎР С‘РЎвЂљР Вµ</b></h2>
+        </div>
+    </div>
+	<div class="check_wrap">
+		<input type="checkbox" id="checkbox" />
+		 <label for="checkbox"></label>
+	</div>
+	<div id="panorama_day" class="panorama_cont">
+		<iframe class="panorama" width="1280" height="720" src="https://www.ocurus.com/tour/NDM1NA==" frameborder="0" allowfullscreen scrolling="no"></iframe>
+	</div>		
+	<div id="panorama_night" class="panorama_cont">
+		<iframe class="panorama" width="1280" height="720" src="https://www.ocurus.com/tour/NDM2Mg==" frameborder="0" allowfullscreen scrolling="no"></iframe>
+    </div>	
+	<section class="manysliders">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <h2 class="text-center text-uppercase"><b>Р СџРЎР‚Р С‘Р СР ВµРЎР‚РЎвЂ№ РЎР‚Р В°Р В±Р С•РЎвЂљ</b></h2>
+                </div>
+            </div>
+			<div class="fotorama" style="margin-top: 50px;"
+					data-allowfullscreen="true"
+					data-nav="thumbs"
+					data-loop="true"
+					data-clicktransition="dissolve">
+				<img src="img/prjcts/1.jpg">
+				<img src="img/prjcts/2.jpg">
+				<img src="img/prjcts/3.jpg">
+				<img src="img/prjcts/4.jpg">
+				<img src="img/prjcts/5.jpg">
+				<img src="img/prjcts/6.jpg">
+				<img src="img/prjcts/7.jpg">
+				<img src="img/prjcts/8.jpg">
+			</div>
+			<!--
+            <div class="row pad2 wow fadeInUp bcgrnd">
+                <div class="col-md-3">
+                    <img src="img/ecaterina-kireleva.jpg" alt="Р вЂўР С”Р В°РЎвЂљР ВµРЎР‚Р С‘Р Р…Р В° Р С™Р С‘РЎР‚Р С‘Р В»РЎРЉР ВµР Р†Р В°">
+                </div>
+                <div class="col-md-9 mt-2 ">
+                    <div class="namebox">
+                        <h4 class="title-t1">Р вЂќР С‘Р В·Р В°Р в„–Р Р… РЎРѓРЎвЂљРЎС“Р Т‘Р С‘РЎРЏ Р вЂўР С”Р В°РЎвЂљР ВµРЎР‚Р С‘Р Р…РЎвЂ№ Р С™Р С‘РЎР‚Р С‘Р В»РЎРЉР ВµР Р†Р С•Р в„– РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р ВµРЎвЂљ Р Т‘Р В»РЎРЏ РЎвЂљР С•Р С–Р С•, РЎвЂЎРЎвЂљР С•Р В±РЎвЂ№ РЎРѓР Т‘Р ВµР В»Р В°РЎвЂљРЎРЉ Р Т‘Р С•Р С Р Р…Р Вµ РЎвЂљР С•Р В»РЎРЉР С”Р С• Р С”РЎР‚Р В°РЎРѓР С‘Р Р†РЎвЂ№Р С, Р Р…Р С• Р С‘ Р СР В°Р С”РЎРѓР С‘Р СР В°Р В»РЎРЉР Р…Р С• РЎС“Р Т‘Р С•Р В±Р Р…РЎвЂ№Р С. Р Р€РЎР‹РЎвЂљР Р…Р С•Р Вµ Р С‘ Р С”Р С•Р СРЎвЂћР С•РЎР‚РЎвЂљР Р…Р С•Р Вµ&nbsp;Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘Р Вµ РІР‚вЂќ РЎРЊРЎвЂљР С• Р Р† Р С—Р ВµРЎР‚Р Р†РЎС“РЎР‹ Р С•РЎвЂЎР ВµРЎР‚Р ВµР Т‘РЎРЉ Р В°РЎвЂљР СР С•РЎРѓРЎвЂћР ВµРЎР‚Р В°, Р С”Р С•РЎвЂљР С•РЎР‚РЎС“РЎР‹ Р СР С•Р В¶Р Р…Р С• РЎРѓР С•Р В·Р Т‘Р В°РЎвЂљРЎРЉ Р Т‘Р В°Р В¶Р Вµ Р Р† РЎвЂљР С‘Р С—Р С•Р Р†Р С•Р в„– Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С”Р Вµ, Р Р…Р ВµР В·Р В°Р Р†Р С‘РЎРѓР С‘Р СР С• Р С•РЎвЂљ РЎР‚Р В°Р В·Р СР ВµРЎР‚Р В°. Р вЂњР В»Р В°Р Р†Р Р…РЎвЂ№Р С Р С”Р В°РЎвЂЎР ВµРЎРѓРЎвЂљР Р†Р С•Р С Р Р† РЎвЂљР В°Р С”Р С•Р С Р В¶Р С‘Р В»РЎРЉР Вµ РЎРЏР Р†Р В»РЎРЏР ВµРЎвЂљРЎРѓРЎРЏ РЎР‚Р В°РЎвЂ Р С‘Р С•Р Р…Р В°Р В»РЎРЉР Р…Р С•Р Вµ Р С‘РЎРѓР С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°Р Р…Р С‘Р Вµ Р С”Р В°Р В¶Р Т‘Р С•Р С–Р С• Р С”Р Р†Р В°Р Т‘РЎР‚Р В°РЎвЂљР Р…Р С•Р С–Р С• Р СР ВµРЎвЂљРЎР‚Р В° Р Р† РЎР‚Р В°Р СР С”Р В°РЎвЂ¦ Р С•Р В±РЎвЂ°Р ВµР в„– Р С‘Р Т‘Р ВµР С‘. Р СџРЎР‚Р С‘РЎвЂЎР ВµР С, Р С‘Р СР ВµР ВµРЎвЂљРЎРѓРЎРЏ Р Р†Р Р†Р С‘Р Т‘РЎС“ Р Р…Р Вµ Р’В«Р В·Р В°Р Р…РЎРЏРЎвЂљР С•РЎРѓРЎвЂљРЎРЉР’В» РЎРЊРЎвЂљР С‘РЎвЂ¦ Р С—Р В»Р С•РЎвЂ°Р В°Р Т‘Р ВµР в„– Р СР ВµР В±Р ВµР В»РЎРЉРЎР‹ Р С‘Р В»Р С‘ Р В°Р С”РЎРѓР ВµРЎРѓРЎРѓРЎС“Р В°РЎР‚Р В°Р СР С‘, Р В° Р В·Р В°РЎвЂЎР В°РЎРѓРЎвЂљРЎС“РЎР‹ Р С‘Р СР ВµР Р…Р Р…Р С• Р С‘РЎвЂ¦ Р С•РЎвЂљРЎРѓРЎС“РЎвЂљРЎРѓРЎвЂљР Р†Р С‘Р Вµ Р С—РЎР‚Р С‘ Р С—РЎР‚Р В°Р Р†Р С‘Р В»РЎРЉР Р…Р С• РЎР‚Р В°РЎРѓРЎРѓРЎвЂљР В°Р Р†Р В»Р ВµР Р…Р Р…РЎвЂ№РЎвЂ¦ Р В°Р С”РЎвЂ Р ВµР Р…РЎвЂљР В°РЎвЂ¦.&nbsp;<br></h4>
+                        <p class="mt-1">Р вЂўР С”Р В°РЎвЂљР ВµРЎР‚Р С‘Р Р…Р В° Р С™Р С‘РЎР‚Р С‘Р В»РЎРЉР ВµР Р†Р В°,&nbsp;<br> Р С•РЎРѓР Р…Р С•Р Р†Р В°РЎвЂљР ВµР В»РЎРЉ РЎРѓРЎвЂљРЎС“Р Т‘Р С‘Р С‘ Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р В°.</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+    <section class="othercolor">
+        <div class="container">
+            <div class="row pad wow fadeInUp">
+                <div class="col-md-8">
+                    <div class="subscribe">Р вЂ”Р В°Р С”Р В°Р В¶Р С‘РЎвЂљР Вµ Р В±Р ВµРЎРѓР С—Р В»Р В°РЎвЂљР Р…РЎС“РЎР‹ Р С”Р С•Р Р…РЎРѓРЎС“Р В»РЎРЉРЎвЂљР В°РЎвЂ Р С‘РЎР‹ Р С‘ Р Р…Р В°РЎв‚¬ РЎРѓР С—Р ВµРЎвЂ Р С‘Р В°Р В»Р С‘РЎРѓРЎвЂљ <br>Р С—Р ВµРЎР‚Р ВµР В·Р Р†Р С•Р Р…Р С‘РЎвЂљ&nbsp;Р вЂ™Р В°Р С&nbsp;Р Р† Р В±Р В»Р С‘Р В¶Р В°Р в„–РЎв‚¬Р ВµР Вµ Р Р†РЎР‚Р ВµР СРЎРЏ</div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <button class="btn text-uppercase btnwhitel" data-toggle="modal" data-target="#exampleModalLong">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ Р С”Р С•Р Р…РЎРѓРЎС“Р В»РЎРЉРЎвЂљР В°РЎвЂ Р С‘РЎР‹</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="steps">
+        <div class="container">
+            <div class="row justify-content-center wow fadeInUp">
+                <div class="col-md-9" style="padding-bottom: 40px;">
+                    <h2 class="text-center text-uppercase">Р вЂ™Р В°РЎв‚¬ Р В»РЎвЂР С–Р С”Р С‘Р в„– Р С—РЎС“РЎвЂљРЎРЉ Р С” Р Р…Р С•Р Р†Р С•РЎРѓР ВµР В»РЎРЉРЎР‹</h2>
+                </div>
+            </div>
+			
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_1"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text">
+						<p style="margin-top: 15px;"><b>Р СџРЎР‚Р ВµР Т‘Р Р†Р В°РЎР‚Р С‘РЎвЂљР ВµР В»РЎРЉР Р…РЎвЂ№Р в„– РЎРЊРЎРѓР С”Р С‘Р В·</b>
+								Р С›Р С—РЎР‚Р ВµР Т‘Р ВµР В»Р ВµР Р…Р С‘Р Вµ РЎРѓРЎвЂљР С‘Р В»Р С‘РЎРѓРЎвЂљР С‘РЎвЂЎР ВµРЎРѓР С”Р С•Р С–Р С• РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘РЎРЏ Р С‘Р Р…РЎвЂљР ВµРЎР‚РЎРЉР ВµРЎР‚Р В°, Р С—Р С•Р Т‘Р С–Р С•РЎвЂљР С•Р Р†Р С”Р В° РЎвЂљР ВµРЎвЂ¦Р Р…Р С‘РЎвЂЎР ВµРЎРѓР С”Р С‘РЎвЂ¦ Р В·Р В°Р Т‘Р В°Р Р…Р С‘Р в„–, 
+								Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…РЎвЂ№РЎвЂ¦ РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘Р в„–, РЎР‚Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР С”Р В° Р С”Р С•Р Р…РЎвЂ Р ВµР С—РЎвЂ Р С‘Р С‘ Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р В°.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_2"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text">
+						<p style="margin-top: 15px;"><b>Р вЂ™Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР В°</b>
+								3D Р Р†Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘Р С‘ Р С‘Р Р…РЎвЂљР ВµРЎР‚РЎРЉР ВµРЎР‚Р В° Р С”Р В°Р В¶Р Т‘Р С•Р С–Р С• Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘РЎРЏ РЎРѓР С•Р С–Р В»Р В°РЎРѓР Р…Р С• РЎС“РЎвЂљР Р†Р ВµРЎР‚Р В¶Р Т‘Р ВµР Р…Р Р…Р С•Р в„– Р С”Р С•Р Р…РЎвЂ Р ВµР С—РЎвЂ Р С‘Р С‘ Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р В°.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_3"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text">
+						<p style="margin-top: 15px;"><b>Р В Р В°Р В±Р С•РЎвЂЎР В°РЎРЏ Р Т‘Р С•Р С”РЎС“Р СР ВµР Р…РЎвЂљР В°РЎвЂ Р С‘РЎРЏ</b>
+								Р В Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР С”Р В° Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР Р…Р С•Р в„– Р Т‘Р С•Р С”РЎС“Р СР ВµР Р…РЎвЂљР В°РЎвЂ Р С‘Р С‘ Р Т‘Р С‘Р В·Р В°Р в„–Р Р…Р В° Р С‘Р Р…РЎвЂљР ВµРЎР‚РЎРЉР ВµРЎР‚Р В°: РЎРѓР С—Р ВµРЎвЂ Р С‘РЎвЂћР С‘Р С”Р В°РЎвЂ Р С‘Р С‘ Р С‘ Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…Р С•Р Вµ РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘Р Вµ РЎРѓ Р СР ВµР В±Р ВµР В»РЎРЉРЎР‹.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_4"></div>
+						</div>
+						<div class="steps_text">
+						<p style="margin-top: 15px;"><b>Р С’Р Р†РЎвЂљР С•РЎР‚РЎРѓР С”Р С‘Р в„– Р Р…Р В°Р Т‘Р В·Р С•РЎР‚</b>
+								Р С™Р С•Р Р…РЎвЂљРЎР‚Р С•Р В»РЎРЉ РЎРѓР С•Р С•РЎвЂљР Р†Р ВµРЎвЂљРЎРѓРЎвЂљР Р†Р С‘РЎРЏ РЎРѓРЎвЂљРЎР‚Р С•Р С‘РЎвЂљР ВµР В»РЎРЉР Р…РЎвЂ№РЎвЂ¦ РЎР‚Р В°Р В±Р С•РЎвЂљ Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР Р…Р С•Р СРЎС“ Р С—Р В»Р В°Р Р…РЎС“. Р С›Р В±РЎвЂ°Р ВµР Р…Р С‘Р Вµ РЎРѓ Р С—Р С•Р Т‘РЎР‚РЎРЏР Т‘РЎвЂЎР С‘Р С”Р В°Р СР С‘. Р С™Р С•Р СР С—Р В»Р ВµР С”РЎвЂљР В°РЎвЂ Р С‘РЎРЏ Р С•Р В±РЎР‰Р ВµР С”РЎвЂљР В° Р СР ВµР В±Р ВµР В»РЎРЉРЎР‹ Р С‘ Р Т‘Р ВµР С”Р С•РЎР‚Р С•Р С.</p>
+						</div>
+					</div>
+				</div>
+            
+            </div>
+        </div>
+    </section>
+   
+    <section class="pricebox">
+        <div class="container-fluid">
+            <div class="row justify-content-center justify-content-center">
+                <div class="col-md-8 pt-3 pt-md-0 pb-3 pb-md-0">
+                    <h2 class="text-center text-uppercase" style="font-weight: 600">Р РЋРЎвЂљР С•Р С‘Р СР С•РЎРѓРЎвЂљРЎРЉ Р Р†Р В°РЎв‚¬Р ВµР С–Р С• Р Т‘Р С‘Р В·Р В°Р в„–Р Р…-Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР В°:</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center padd">
+                <div class="col-md-3  mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect1.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">Р В­Р РЋР С™Р ВР вЂ”Р СњР В«Р в„ў<br> <span>10$ Р С&sup2;</span></h3>
+                        <ul class="list-unstyled gall__list">
+                            <li>Р В Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР С”Р В° Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…Р С•Р С–Р С• РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘РЎРЏ</li>
+                            <li>3D-Р Р†Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р Р†РЎРѓР ВµРЎвЂ¦ Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘Р в„–</li>
+                        </ul>
+<div class="pricebtn"><a href="#exampleModalLong" class="base-button btn-order-callback" data-toggle="modal" data-target="#exampleModalLong">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win brd-win_center effect7">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect2.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">Р В Р С’Р вЂР С›Р В§Р ВР в„ў <br> <span>25$ Р С&sup2;</span></h3>
+                        <ul class="list-unstyled gall__list gall__list-center">
+                            <li>Р В Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР С”Р В° Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…Р С•Р С–Р С• РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘РЎРЏ</li>
+                            <li>3D-Р Р†Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р Р†РЎРѓР ВµРЎвЂ¦ Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘Р в„–</li>
+                            <li>Р В Р В°Р В±Р С•РЎвЂЎР В°РЎРЏ Р Т‘Р С•Р С”РЎС“Р СР ВµР Р…РЎвЂљР В°РЎвЂ Р С‘РЎРЏ</li>
+                            <li>Р РЋР С—Р ВµРЎвЂ Р С‘РЎвЂћР С‘Р С”Р В°РЎвЂ Р С‘РЎРЏ Р СР ВµР В±Р ВµР В»Р С‘</li>
+                        </ul>
+                            <div class="pricebtn"><a href="#exampleModalLong" class="base-button btn-order-callback" data-toggle="modal" data-target="#exampleModalLong">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect3.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">Р С’Р вЂ™Р СћР С›Р В Р РЋР С™Р ВР в„ў <br> <span>35$ Р С&sup2;</span></h3>
+                        <ul class="list-unstyled gall__list">
+                            <li>Р В Р В°Р В·РЎР‚Р В°Р В±Р С•РЎвЂљР С”Р В° Р С—Р В»Р В°Р Р…Р С‘РЎР‚Р С•Р Р†Р С•РЎвЂЎР Р…Р С•Р С–Р С• РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р С‘РЎРЏ</li>
+                            <li>3D-Р Р†Р С‘Р В·РЎС“Р В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р Р†РЎРѓР ВµРЎвЂ¦ Р С—Р С•Р СР ВµРЎвЂ°Р ВµР Р…Р С‘Р в„–</li>
+                            <li>Р В Р В°Р В±Р С•РЎвЂЎР В°РЎРЏ Р Т‘Р С•Р С”РЎС“Р СР ВµР Р…РЎвЂљР В°РЎвЂ Р С‘РЎРЏ</li>
+                            <li>Р РЋР С—Р ВµРЎвЂ Р С‘РЎвЂћР С‘Р С”Р В°РЎвЂ Р С‘РЎРЏ Р СР ВµР В±Р ВµР В»Р С‘</li>
+                            <li>Р В Р В°Р В±Р С•РЎвЂљР В° РЎРѓ Р С—Р С•Р Т‘РЎР‚РЎРЏР Т‘РЎвЂЎР С‘Р С”Р В°Р СР С‘</li>
+                        </ul>
+<div class="pricebtn"><a href="#exampleModalLong" class="base-button btn-order-callback" data-toggle="modal" data-target="#exampleModalLong">Р вЂ”Р В°Р С”Р В°Р В·Р В°РЎвЂљРЎРЉ</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <form class="send_form" method="post">
+                <div class="row wow fadeInUp">
+                    <div class="col-md-5">
+                        <div class="subscribe" style="font-family:rawline">Р Р€Р В·Р Р…Р В°Р в„–РЎвЂљР Вµ РЎРѓРЎвЂљР С•Р С‘Р СР С•РЎРѓРЎвЂљРЎРЉ <span style="font-weight: 600">Р Т‘Р С‘Р В·Р В°Р в„–Р Р…-Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР В° Р С‘Р Р…РЎвЂљР ВµРЎР‚РЎРЉР ВµРЎР‚Р В° Р вЂ™Р В°РЎв‚¬Р ВµР С–Р С• Р Т‘Р С•Р СР В° - </span>РЎРѓР Т‘Р ВµР В»Р В°Р в„–РЎвЂљР Вµ РЎв‚¬Р В°Р С– Р Р…Р В°Р Р†РЎРѓРЎвЂљРЎР‚Р ВµРЎвЂЎРЎС“ Р РЋР вЂ™Р С›Р вЂўР в„ў Р СљР вЂўР В§Р СћР вЂў!</div>
+                    </div>
+                    <div class="col-md-7 mt-4 mt-md-0">
+                        <p class="text-right">Р С›РЎРѓРЎвЂљР В°Р Р†РЎРЉРЎвЂљР Вµ РЎРѓР Р†Р С•Р в„– Р Р…Р С•Р СР ВµРЎР‚ РЎвЂљР ВµР В»Р ВµРЎвЂћР С•Р Р…Р В° -
+                            <span class="d-md-block">Р СРЎвЂ№ Р С—Р ВµРЎР‚Р ВµР В·Р Р†Р С•Р Р…Р С‘Р С Р вЂ™Р В°Р С Р Р† Р В±Р В»Р С‘Р В¶Р В°Р в„–РЎв‚¬Р ВµР Вµ Р Р†РЎР‚Р ВµР СРЎРЏ.</span></p>
+                        <div class="row justify-content-around mt-5 ">
+                            <input type="tel" name="phone" class="form-control align-self-end" id="phone-input" aria-describedby="emailHelp" placeholder="+38 XXX XXX XX XX" maxlength="18" required>
+                            <button  class="btn btnwhite2 mt-3 mt-md-0">Р СџРЎР‚Р С•РЎРѓРЎвЂЎР С‘РЎвЂљР В°РЎвЂљРЎРЉ РЎРѓРЎвЂљР С•Р С‘Р СР С•РЎРѓРЎвЂљРЎРЉ Р С—РЎР‚Р С•Р ВµР С”РЎвЂљР В°</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer wow fadeInUp">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-3 mt-1">
+                    <img src="img/logo.jpg">
+                </div>
+                <div class="col-md-5">
+                    <p class="mt-4 mt-md-0"></p>
+                    <div class="links">
+                        <a href="https://www.instagram.com/pridestudio.com.ua" target="blank" style="filter: invert(1)"><img src="img/inst.png"></a>
+                        <!-- <a href="https://vk.com/club43836736" target="_blank"><img src="img/vk.png"></a> -->
+                        <a href="https://t.me/Kirilyeva" target="blank" style="margin-left:14px;"><img src="img/teleg.png"></a>
+                        <!-- <a href="whatsapp://send?phone=380964011697" style="margin-left:16px;"><img src="img/whats.png"></a> -->
+                        <a href="viber://add?number=+380964011697" style="margin-left:14px;"><img src="img/viber.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-3 offset-xl-1">
+                    <a href="tel:++380964011697" class="telephone mt-3 mt-md-0">+38 096 401 1697</a>
+                    <a href="mailto:pride.interiorstudio@gmail.com" class="mail mt-3">ekaterinakirilyeva@gmail.com</a>
+                    <p class="politics-mt">
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Р СџР С•Р В»Р С‘РЎвЂљР С‘Р С”Р В° Р С”Р С•Р Р…РЎвЂћР С‘Р Т‘Р ВµР Р…РЎвЂ Р С‘Р В°Р В»РЎРЉР Р…Р С•РЎРѓРЎвЂљР С‘</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

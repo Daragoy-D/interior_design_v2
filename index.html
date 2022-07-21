@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVBBLF8');</script>
+<!-- End Google Tag Manager -->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+	<script src="js/main.js"></script>
+
+   
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Студия дизайна интерьера 'PRIDE'. Дизайн интерьера квартир и частных домов, ремонт под ключ, 3D визуализация интерьера." />
+	<meta name="keywords" content="дизайн интерьера, дизайн квартиры, дизайн дома, дизайн-проект интерьера, дизайн интерьера квартиры, дизайн интерьера дома, дизайн студия интерьера">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nordy.css">
+    <link rel="stylesheet" href="css/animate.css">
+	
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	
+	
+    
+    
+    <title>Студия дизайна интерьера "PRIDE". Дизайн интерьера квартир и частных домов, ремонт под ключ, 3D визуализация интерьера.</title>
+</head>
+
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVBBLF8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	
+	<div class="modalWindow_background" id="modalWindow_background">
+	<svg class="close_icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+		<div class="modalWindow">
+			<form method="post" id="ajax_form" name="order_form" >
+				<div class="order_form"></div>
+				<p>Оставьте свои контактные данные и наши специалисты свяжутся с Вами в ближайшее время.</p>
+				<input onclick="clear_bord('order_form',0);" type="text" name="name" placeholder="Ваше имя" /><br>
+				<input onclick="clear_bord('order_form',1);" type="text" name="phonenumber" placeholder="Телефон" /><br>
+				<input type="hidden" name="button" value=""/>
+				<div class="knopka" id="submit">
+					<a href="javascript:void(0);" class="knopka_bl_2">Отправить</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modalWindow_background_kviz" id="modalWindow_background_kviz">
+	<svg class="close_icon_kviz" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+		<div class="modalWindow_kviz" id="start_kviz" style="display: none;">
+			<p style="text-align: center;">Пройдите простой тест из 7 вопросов и получите примерную стоимость вашего пректа</p>
+			<div class="button_kviz" id="next_1">
+				<a href="javascript: kviz('1q');">Начать тест</a>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="1_question" style="display: none;">
+			<p>Вам нужен дизайн</p>
+			<div class="kviz_progress" id="pr_14"></div>
+			<div class="question">
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek checked" id="q1_1"><div></div>Квартиры</div>
+					<div class="q_chek" id="q1_2"><div></div>Дома</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('start');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('2q');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="2_question" style="display: none;">
+			<p>Какая площадь помещения</p>
+			<div class="kviz_progress" id="pr_28"></div>
+			<div class="question">
+				<div class="question_wrap" style="display: flex">
+					<input id="q3_s" type="text" placeholder="100" onkeyup = "this.value=parseInt(this.value) | 0" style="margin: 0; height: 45px;"/>
+					<div style="border: none;
+								font-size: 25px;
+								font-weight: 300;
+								padding-top: 2px;
+								padding-left: 15px;
+								width: 50px;">м&sup2;</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('1q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('3q');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="3_question" style="display: none;">
+			<p>В каком стиле вы хотите интерьер</p>
+			<div class="kviz_progress" id="pr_42"></div>
+			<div class="question">
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek checked" id="q3_1"><div></div>Минимализм</div>
+					<div class="q_chek" id="q3_2"><div></div>Эко-стиль</div>
+				</div>
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek" id="q3_3"><div></div>Лофт</div>
+					<div class="q_chek" id="q3_4"><div></div>Скандинавский</div>
+				</div>
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek" id="q3_5"><div></div>Нео-классика</div>
+					<div class="q_chek" id="q3_6"><div></div>Не знаю</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('2q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('4q');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="4_question" style="display: none;">
+			<p>Какой бюджет планируете потратить на реализацию проекта</p>
+			<div class="kviz_progress" id="pr_56"></div>
+			<div class="question">
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek checked" id="q4_1"><div></div>5 000 - 10 000$</div>
+					<div class="q_chek" id="q4_2"><div></div>10 000 - 20 000$</div>
+				</div>
+				<div class="question_wrap" style="display: flex">
+					<div class="q_chek" id="q4_3"><div></div>20 000 - 30 000$</div>
+					<div class="q_chek" id="q4_4"><div></div>Более 30 000$</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('3q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('5q');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="5_question" style="display: none;">
+			<p>Когда вы хотите начать ремонтные работы</p>
+			<div class="kviz_progress" id="pr_70"></div>
+			<div class="question">
+				<div class="question_wrap w100" style="display: block">
+					<div class="q_chek checked" id="q5_1"><div></div>Чем раньше тем лучше</div>
+					<div class="q_chek" id="q5_2"><div></div>Сразу по готовности дизайн проекта</div>
+				</div>
+				<div class="question_wrap w100" style="display: block">
+					<div class="q_chek" id="q5_3"><div></div>В течении года</div>
+					<div class="q_chek" id="q5_4"><div></div>Через год и более</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('4q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('6q');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="6_question" style="display: none;">
+			<p>Насколько вы готовы учавствовать в процессе ремонтных работ</p>
+			<div class="kviz_progress" id="pr_84"></div>
+			<div class="question">
+				<div class="question_wrap w100" style="display: block">
+					<div class="q_chek checked" id="q6_1"><div></div>Хочу контролировать весь процесс</div>
+					<div class="q_chek" id="q6_2"><div></div>Моё участие + помощь дизайнера</div>
+				</div>
+				<div class="question_wrap w100" style="display: block">
+					<div class="q_chek" id="q6_3"><div></div>Хочу работу "под ключ"</div>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('5q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('final');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="final" style="display: none;">
+			<p>Оставьте ваш номер телефона</p>
+			<div class="kviz_progress" id="pr_100"></div>
+			<div class="question">
+				<div class="question_wrap" style="display: flex">
+					<input onclick="clear_bord_kviz();" id="kviz_phone" type="text" placeholder="Телефон" style="margin: 0; height: 45px;"/>
+				</div>
+			</div>
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="back">
+					<a href="javascript: kviz('6q_b');">&#8592; Назад</a>
+				</div>
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('send');">Далее &#8594;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modalWindow_kviz" id="kviz_end" style="display: none;">
+			<p style="text-align: center; font-size: 30px;">Спасибо!</p>
+			<p style="text-align: center; font-weight: 500; margin-bottom: 40px;">Мы обработаем ваши данные и свяжемся с вами в ближайшее время</p>
+			
+			<div class="wrap" style="display: flex;">
+				<div class="button_kviz" id="next">
+					<a href="javascript: kviz('end');">Закрыть</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<form method="post" name="kviz_form" >
+		<input type="hidden" name="q1" value="1"/>
+		<input type="hidden" name="q2" value=""/>
+		<input type="hidden" name="q3" value="1"/>
+		<input type="hidden" name="q4" value="1"/>
+		<input type="hidden" name="q5" value="1"/>
+		<input type="hidden" name="q6" value="1"/>
+		<input type="hidden" name="q7" value=""/>
+	</form>
+    <header class="header">
+        <div class="menu">
+			<div class="menu_wrap">
+				<div class="left_m"><img src="img/logo.png"/></div>
+				<div class="center_m">
+					<ul class="nav">
+						<li><a class="nav_lnk" href="#portfolio">портфолио</a></li>
+						<li><a class="nav_lnk" href="#steps">этапы работ</a></li>
+						<li><a class="nav_lnk" href="#cost">цены</a></li>
+					</ul>
+				</div>
+				<div class="right_m">
+					<p class="telt">
+						<a href="viber://chat?number=+380964011697" target="blank">Viber&nbsp;/&nbsp;</a> 
+						<a href="https://t.me/Kirilyeva" target="blank">Telegram</a>
+					</p>
+					<a class="tel" href="tel:+380964011697">+38 096 401 16 97</a>
+					<div class="knopka" id="callback">
+					  <a href="javascript:void(0);" class="knopka_bl">Обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_mob">
+			<div class="left_m_mob"><img src="img/logo.png"/></div>
+			<div class="right_m" style="margin-left: -40px; margin-top: -5px;">
+				<p class="telt">
+					<a href="viber://add?number=+380964011697" target="blank"><img src="img/viber.png"></a> 
+					<a href="https://t.me/Kirilyeva" target="blank"><img src="img/teleg.png"></a>
+				</p>
+				<a class="tel" href="tel:+380964011697">+38 096 401 16 97</a>		
+			</div>
+		</div>
+    </header>
+	
+    <section class="uniquedisign">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="zzzska col-md-7 col-12 text-center" style="margin-top: 165px;">
+                    <h1 class="mt-5" id="g-no">ДИЗАЙН ИНТЕРЬЕРА<br>ПРЕМИУМ-КЛАССА<br>от 30 дней в Харькове и области<br></h1>
+                    <p class="mt-3 header-text" id="g-no-2">Выезд дизайнера на обмеры и консультацию <br>БЕСПЛАТНО<br></p>
+                    <div class="knopka" id="zamer">
+					  <a href="javascript:void(0);" class="knopka_bl">Получить обмеры</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--
+	<section class="wow fadeInUp">
+		<div class="glass">
+			<img src="img/3d_logo.png">
+		</div>
+		<div class="col-md-12 wow fadeInUp">
+			<h2 style="margin: 85px 0 0 0;" class="text-center text-uppercase"><b>Интерактивная 3D модель квартиры</b></h2>
+			<p class="mt-3 header-text" style="text-align: center; margin-bottom: 40px;">Вне зависимости от тарифного плана вы получите интерактивную 3D модель вашего интерьера</p>
+		</div>
+		
+		
+		<div class="check_wrap">
+			<div class="day"><p>День</p></div>
+			<div class="night"><p>Ночь</p></div>
+		</div>
+		<div id="panorama_day" class="panorama_cont">
+			<iframe class="panorama" id="p_day" width="1280" height="720" src="https://ocurus.com/tour/NDUxOQ==" frameborder="0" allowfullscreen scrolling="no"></iframe>
+		</div>		
+		<div id="panorama_night" class="panorama_cont" style="display: none">
+			<iframe class="panorama" id="p_night" width="1280" height="720" src="https://ocurus.com/tour/NDUyMg==" frameborder="0" allowfullscreen scrolling="no"></iframe>
+		</div>	
+		<div class="knopka" id="download_project">
+			<a href="rp.pdf" target="blank" class="knopka_bl">Скачать пример рабочего проекта</a>
+		</div>
+	</section> -->
+	
+	<section class="wow fadeInUp">
+		<div class="col-md-12 wow fadeInUp">
+			<h2 style="margin: 85px 0 0 0;" class="text-center text-uppercase"><b>Интерактивная 3D модель квартиры</b></h2>
+			<p class="mt-3 header-text" style="text-align: center; margin-bottom: 40px;">Вне зависимости от тарифного плана вы получите интерактивную 3D модель вашего интерьера</p>
+		</div>
+		<iframe width="100%" height="640" class="panorama_frame" style="width: 100%; height: 640px; border: none; max-width: 100%;" frameborder="0" allow="vr,gyroscope,accelerometer,fullscreen" scrolling="no" allowfullscreen="true" src="https://kuula.co/share/collection/7lcmf?fs=1&vr=0&sd=1&autorotate=0.3&autop=15&thumbs=0&margin=8&chromeless=0&logo=0"></iframe>
+		
+	</section>
+	
+    <section class="whywe wow fadeInUp" style="background: white; display: none;">
+        <div class="container">
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-12">
+                    <div class="d-flex flex-wrap whywebox">
+                        <div class="whywe-box">
+                            <span>ПЛАНИРОВКА<br></span>
+                            <h3 class="mt-3">Разработаем грамотное и понятное планировочное решение с учетом Ваших пожеланий. При необходимости дадим рекомендации.</h3>
+                        </div>
+                        <div class="whywe-box mt-3 mt-md-0">
+                            <span>3D ВИЗУАЛИЗАЦИЯ</span>
+                            <h3 class="mt-3">Создадим реалистичную 3D модель Вашего будущего жилища. Вы сможете ощутить пространство, увидеть мебель, свет, материалы и другие тонкости дизайна Вашего интерьера.</h3>
+                        </div>
+                        <div class="whywe-box mt-3 mt-md-0">
+                            <span>РЕМОНТ</span>
+                            <h3 class="mt-3">Профессионально и качественно выполним все ремонтно-отделочные, электромонтажные и сантехнические работы с авторским сопровождением&nbsp; дизайнера в ходе всего процесса ремонта.</h3>
+                        </div>
+                    </div>
+					<div class="knopka" id="download_project">
+					  <a href="rp.pdf" target="blank" class="knopka_bl">Скачать пример рабочего проекта</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+	<section class="manysliders" id="portfolio" style="background: #F6F6FA;  padding-bottom: 1px; padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <h2 class="text-center text-uppercase"><b>Примеры работ</b></h2>
+                </div>
+            </div>
+			<div class="fotorama" style="margin-top: 50px;"
+					data-allowfullscreen="true"
+					data-nav="thumbs"
+					data-loop="true"
+					data-clicktransition="dissolve"
+					data-width="100%">
+				<a href="img/prjcts/kvartira_minimal/1.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/1.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/2.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/2.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/3.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/3.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/4.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/4.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/5.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/5.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/6.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/6.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/7.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/7.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/8.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/8.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/9.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/9.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/10.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/10.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/11.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/11.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/12.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/12.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/13.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/13.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/14.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/14.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/15.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/15.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/16.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/16.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/17.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/17.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/18.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/18.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/19.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/19.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/20.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/20.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/21.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/21.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/22.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/22.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/23.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/23.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/24.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/24.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/25.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/25.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/26.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/26.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/27.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/27.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/28.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/28.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/29.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/29.jpg"></a>
+				<a href="img/prjcts/kvartira_minimal/30.jpg"><img data-src="img/prjcts/kvartira_minimal/pr/30.jpg"></a>
+				<a href="img/prjcts/minimal/1.jpg"><img data-src="img/prjcts/minimal/pr/1.jpg"></a>
+				<a href="img/prjcts/minimal/2.jpg"><img data-src="img/prjcts/minimal/pr/2.jpg"></a>
+				<a href="img/prjcts/minimal/3.jpg"><img data-src="img/prjcts/minimal/pr/3.jpg"></a>
+				<a href="img/prjcts/minimal/4.jpg"><img data-src="img/prjcts/minimal/pr/4.jpg"></a>
+				<a href="img/prjcts/minimal/5.jpg"><img data-src="img/prjcts/minimal/pr/5.jpg"></a>
+				<a href="img/prjcts/minimal/6.jpg"><img data-src="img/prjcts/minimal/pr/6.jpg"></a>
+				<a href="img/prjcts/minimal/7.jpg"><img data-src="img/prjcts/minimal/pr/7.jpg"></a>
+				<a href="img/prjcts/minimal/8.jpg"><img data-src="img/prjcts/minimal/pr/8.jpg"></a>
+				<a href="img/prjcts/minimal/9.jpg"><img data-src="img/prjcts/minimal/pr/9.jpg"></a>
+				<a href="img/prjcts/minimal/10.jpg"><img data-src="img/prjcts/minimal/pr/10.jpg"></a>
+				<a href="img/prjcts/minimal/11.jpg"><img data-src="img/prjcts/minimal/pr/11.jpg"></a>
+				<a href="img/prjcts/minimal/12.jpg"><img data-src="img/prjcts/minimal/pr/12.jpg"></a>
+				<a href="img/prjcts/kvartira/1.jpg"><img data-src="img/prjcts/kvartira/pr/1.jpg"></a>
+				<a href="img/prjcts/kvartira/2.jpg"><img data-src="img/prjcts/kvartira/pr/2.jpg"></a>
+				<a href="img/prjcts/kvartira/3.jpg"><img data-src="img/prjcts/kvartira/pr/3.jpg"></a>
+				<a href="img/prjcts/kvartira/4.jpg"><img data-src="img/prjcts/kvartira/pr/4.jpg"></a>
+				<a href="img/prjcts/kvartira/5.jpg"><img data-src="img/prjcts/kvartira/pr/5.jpg"></a>
+				<a href="img/prjcts/kvartira/6.jpg"><img data-src="img/prjcts/kvartira/pr/6.jpg"></a>
+				<a href="img/prjcts/kvartira/7.jpg"><img data-src="img/prjcts/kvartira/pr/7.jpg"></a>
+				<a href="img/prjcts/kvartira/8.jpg"><img data-src="img/prjcts/kvartira/pr/8.jpg"></a>
+				<a href="img/prjcts/kvartira/9.jpg"><img data-src="img/prjcts/kvartira/pr/9.jpg"></a>
+				<a href="img/prjcts/kvartira/10.jpg"><img data-src="img/prjcts/kvartira/pr/10.jpg"></a>
+				
+			</div>
+			<div class="knopka" id="gid">
+				<a href="GID.pdf" target="blank" class="knopka_bl">Скачать тренды дизайна 2020 года</a>
+			</div>
+        </div>
+    </section>
+	
+	<section class="manysliders" style="background: #ffffff;  padding-bottom: 55px; padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <h2 class="text-center text-uppercase"><b>Почему стоит выбрать нас</b></h2>
+                </div>
+            </div>
+			<div class="cells_wrap">
+				<div class="cells">
+					<div class="cells_img"><img src="img/opit.png"/></div>
+					<div class="cells_txt">
+						<p>7 ЛЕТ НА РЫНКЕ</p>
+						<p>Огромный опыт, постоянное развитие, обучение и новые проекты - 100% гарантия успеха.</p>
+					</div>
+				</div>
+				<div class="cells">
+					<div class="cells_img"><img src="img/team.png"/></div>
+					<div class="cells_txt">
+						<p>КОМАНДА</p>
+						<p>Постоянный штат профессиональных архитекторов-дизайнеров и опытной бригады рабочих.</p>
+					</div>
+				</div>
+				<div class="cells">
+					<div class="cells_img"><img src="img/personalize.png"/></div>
+					<div class="cells_txt">
+						<p>ПЕРСОНАЛИЗАЦИЯ</p>
+						<p>Дизайн проект разрабатывается согласно вашим пожеланиям умноженным на нашу экспертность</p>
+					</div>
+				</div>
+				<div class="cells">
+					<div class="cells_img"><img src="img/speed.png"/></div>
+					<div class="cells_txt">
+						<p>60 ДНЕЙ</p>
+						<p>Мы даем готовое дизай-решение за 60 рабочих дней. Уже через неделю утвердим решение под вашу планировку</p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    
+    <section class="steps" id="steps" style="background: #F6F6FA; padding-bottom: 5px;">
+        <div class="container">
+            <div class="row justify-content-center wow fadeInUp">
+                <div class="col-md-9" style="padding-bottom: 40px;">
+                    <h2 class="text-center text-uppercase">как все будет происходить</h2>
+                </div>
+            </div>
+			
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_1"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_1">
+						<p style="margin-top: 29px;"><b>Замеры и консультация</b>
+Выезд дизайнера на замеры объекта. Составление обмерочного плана.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_2"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_2">
+						<p style="margin-top: 15px;"><b>Предварительный эскиз</b>
+Определение стилистического решения интерьера, подготовка технических заданий, планировочных решений, разработка концепции дизайна.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_3"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_3">
+						<p style="margin-top: 15px;"><b>Визуализация проекта</b>
+3D визуализации интерьера каждого помещения согласно утвержденной концепции дизайна.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_4"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_4">
+						<p style="margin-top: 15px;"><b>Рабочая документация</b>
+Разработка полного пакета рабочих чертежей и спецификаций.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_5"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_5">
+						<p style="margin-top: 29px;"><b>Смета</b>
+Подготовка сметы и согласование материалов.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_6"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_6">
+						<p style="margin-top: 29px;"><b>Ремонт</b>
+Ведение ремонтно-строительных работ.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_7"></div>
+							<div class="steps_line"></div>
+						</div>
+						<div class="steps_text" id="step_7">
+						<p style="margin-top: 15px;"><b>Авторский надзор</b>
+Контроль соответствия строительных работ проектному плану. Закупка материалов. Общение с подрядчиками. Комплектация объекта мебелью и декором.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps_main">
+					<div class="steps_rect">
+						<div class="steps_logo_box">
+							<div class="steps_logo" id="steps_8"></div>
+						</div>
+						<div class="steps_text" id="step_8">
+						<p style="margin-top: 29px;"><b>Сдача объекта</b>
+Можно праздновать новоселье.</p>
+						</div>
+					</div>
+				</div>
+				
+            </div>
+        </div>
+		<div class="knopka" id="kviz">
+			<a href="javascript:void(0);" class="knopka_bl">Просчитать стоимость вашего проекта</a>
+		</div>
+    </section>
+   
+    <section class="pricebox" id="cost" style="background: #ffffff;">
+        <div class="container-fluid">
+            <div class="row justify-content-center justify-content-center">
+                <div class="col-md-8 pt-3 pt-md-0 pb-3 pb-md-0">
+                    <h2 class="text-center text-uppercase" style="font-weight: 600">тарифы</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center padd">
+                <div class="col-md-3  mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect1.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">Рабочий прект<br> <span>25$ м&sup2;</span></h3>
+                        <ul class="list-unstyled gall__list">
+                            <li>Разработка планировочного решения</li>
+                            <li>3D-визуализация всех помещений</li>
+							<li>Интерактивная 3D модель Вашего дома/квартиры</li>
+							<li>Рабочая документация</li>
+                            <li>Спецификация мебели и материалов</li>
+                        </ul>
+						<div class="knopka" id="order_RP">
+							<a href="javascript:void(0);" class="knopka_bl_3">Заказать</a>
+						</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win brd-win_center effect7">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect2.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">С авторским надзором<br> <span>35$ м&sup2;</span></h3>
+                        <ul class="list-unstyled gall__list gall__list-center">
+                            <li>Разработка планировочного решения</li>
+                            <li>3D-визуализация всех помещений</li>
+							<li>Интерактивная 3D модель Вашего дома/квартиры</li>
+							<li>Рабочая документация</li>
+                            <li>Спецификация мебели и материалов</li>
+							<li>Работа с подрядчиками и поставщиками</li>
+							<li>Комплектация объекта</li>
+                        </ul>
+                        <div class="knopka" id="order_RPAN">
+							<a href="javascript:void(0);" class="knopka_bl_3">Заказать</a>
+						</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-md-3" style="margin-top: 60px;">
+                    <div class="brd-win">
+                        <!--<div class="mb-3 gall__img"><img src="img/proect3.jpg" alt=""></div>-->
+                        <h3 class="mb-3 text-center title-packet">Дизайн под ключ<br> <span>Мы работаем - Вы отдыхаете</span></h3>
+                        <ul class="list-unstyled gall__list">
+						<li> </li>
+                            <li>Дизайн-проект плюс реализация</li>
+                            <li>Собственная профессиональная бригада строителей</li>
+							<li>Авторское сопровождение</li>
+                            <li>Работа с подрядчиками и поставщиками</li>
+							<li>Полная комплектация объекта</li>
+						
+                        </ul>
+						<div class="knopka" id="order_KEY">
+							<a href="javascript:void(0);" class="knopka_bl_3">Заказать</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+			<div class="knopka" id="download_project">
+				<a href="rp.pdf" target="blank" class="knopka_bl">Скачать пример рабочего проекта</a>
+			</div>
+        </div>
+    </section>
+	
+	<section class="manysliders" style="background: #F6F6FA; padding-top: 50px; padding-bottom: 5px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <h2 class="text-center text-uppercase"><b>Фото реализованных объектов</b></h2>
+                </div>
+            </div>
+			<div class="fotorama" style="margin-top: 50px;"
+					data-allowfullscreen="true"
+					data-nav="thumbs"
+					data-loop="true"
+					data-clicktransition="dissolve"
+					data-width="100%">
+				
+				<a href="img/prjcts/2.jpg"><img data-src="img/prjcts/2.jpg"></a>
+				<a href="img/prjcts/3.jpg"><img data-src="img/prjcts/3.jpg"></a>
+				<a href="img/prjcts/4.jpg"><img data-src="img/prjcts/4.jpg"></a>
+				<a href="img/prjcts/5.jpg"><img data-src="img/prjcts/5.jpg"></a>
+				<a href="img/prjcts/6.jpg"><img data-src="img/prjcts/6.jpg"></a>
+				<a href="img/prjcts/7.jpg"><img data-src="img/prjcts/7.jpg"></a>
+				<a href="img/prjcts/8.jpg"><img data-src="img/prjcts/8.jpg"></a>
+				<a href="img/prjcts/9.jpg"><img data-src="img/prjcts/9.jpg"></a>
+				<a href="img/prjcts/10.jpg"><img data-src="img/prjcts/10.jpg"></a>
+				<a href="img/prjcts/11.jpg"><img data-src="img/prjcts/11.jpg"></a>
+				<a href="img/prjcts/12.jpg"><img data-src="img/prjcts/12.jpg"></a>
+				<a href="img/prjcts/13.jpg"><img data-src="img/prjcts/13.jpg"></a>
+				<a href="img/prjcts/14.jpg"><img data-src="img/prjcts/14.jpg"></a>
+				<a href="img/prjcts/1.jpg"><img data-src="img/prjcts/1.jpg"></a>
+			</div>
+			<div class="knopka" id="consultation">
+				<a href="javascript:void(0);" class="knopka_bl">Отправить заявку</a>
+			</div>
+        </div>
+    </section>
+
+	
+	<footer class="footer wow fadeInUp">
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="left_f">
+                    <img src="img/logo.png" id="logo_bottom">
+                </div>
+                <div class="center_f" style="text-align: center;">
+                    <p>Остались вопросы? Звоните!</p>
+					<a href="javascript:void(0);" class="knopka" id="callback_f">Бесплатный обратный звонок</a><br>
+					<a href="tel:+380964011697" class="tel_f">+38 (096) 401-16-97</a>
+                </div>
+                <div class="right_f">
+                    <div class="links">
+                        <a href="https://www.instagram.com/pridestudio.com.ua" target="blank" style="filter: invert(1)"><img src="img/inst.png"></a>
+                        <a href="https://t.me/Kirilyeva" target="blank" style="margin-left:14px;"><img src="img/teleg.png"></a>
+                        <a href="viber://add?number=+380964011697" style="margin-left:14px;"><img src="img/viber.png"></a>
+                    </div>
+                    <a href="mailto:pridedesignstudio@gmail.com" class="mail">pridedesignstudio@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
